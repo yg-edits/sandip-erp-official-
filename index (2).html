@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ad102d">
+<meta name="description" content="Sandip University ERP portal landing page demo">
+<title>ERP Portal | Sandip University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f1f2;--card:#fff;--ink:#281b1e;--muted:#796b6e;--line:#eadfe1;--red:#ad102d;--pale:#fff1f3}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(135deg,#fff,#f4e8ea);color:var(--ink);font:15px/1.5 "Bricolage Grotesque",system-ui,sans-serif}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px clamp(16px,5vw,60px);background:#fff;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800}.mark{width:42px;height:42px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;color:var(--red);font-weight:800}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.2em}
+a{color:var(--red);text-decoration:none;font-weight:700}.page{width:min(900px,calc(100% - 28px));margin:clamp(18px,5vh,55px) auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:0 20px 60px #46101d18;overflow:hidden}
+.hero{text-align:center;padding:34px 20px 15px}.logo{width:100px;height:100px;border:1px solid var(--line);border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;overflow:hidden;color:var(--red);font-size:26px;font-weight:800}.logo img{width:100%;height:100%;object-fit:contain}.uni{font-size:28px;color:var(--red);font-weight:800;letter-spacing:.14em}.sub{font-size:11px;color:var(--muted);letter-spacing:.3em;font-weight:700}.rule{height:2px;width:180px;margin:14px auto;background:linear-gradient(90deg,transparent,#b99c68,transparent)}
+.heading{text-align:center;padding:10px 18px 25px}.eyebrow{font-size:10px;letter-spacing:.22em;color:var(--red);font-weight:800}h1{font-size:clamp(27px,5vw,36px);margin:7px 0 4px;line-height:1.15}.intro{color:var(--muted);margin:0}
+.content{padding:0 clamp(16px,5vw,45px) 32px}.section-title{font-weight:800;font-size:14px;margin:0 0 12px}.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.role{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:left;min-height:130px;display:flex;flex-direction:column;gap:8px;cursor:pointer;color:var(--ink);font:inherit;transition:.18s}
+.role:hover{transform:translateY(-2px);border-color:#d7a4af}.role[aria-pressed=true]{background:var(--pale);border:2px solid var(--red);padding:15px}.ico{font-size:25px}.role strong{font-size:15px}.role small{color:var(--muted);font-size:11px}
+.continue{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:20px;padding:17px;background:#fcf8f8;border:1px solid var(--line);border-radius:12px}.continue strong{display:block}.continue span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.btn{background:var(--red);color:white;padding:12px 18px;border-radius:9px;white-space:nowrap}.btn:hover{background:#850b22}
+.notice{font-size:11px;color:#715d25;background:#fff9e9;border:1px solid #f0e1b5;padding:12px;border-radius:10px;margin:18px 0 0}
+footer{text-align:center;border-top:1px solid var(--line);padding:17px;color:var(--muted);font-size:11px}
+button:focus-visible,a:focus-visible{outline:3px solid #e6a2af;outline-offset:3px}
+@media(max-width:620px){.top{padding:12px}.page{margin:14px auto}.panel{border-radius:15px}.hero{padding-top:25px}.logo{width:88px;height:88px}.uni{font-size:23px}.roles{grid-template-columns:1fr;gap:8px}.role{min-height:75px;padding:11px 14px;display:grid;grid-template-columns:36px 1fr;grid-template-rows:auto auto;align-content:center}.role[aria-pressed=true]{padding:10px 13px}.ico{grid-row:1/3;align-self:center}.role strong,.role small{grid-column:2}.continue{align-items:stretch;flex-direction:column}.btn{text-align:center}}
+@media(prefers-color-scheme:dark){body{background:#1b1214;color:#f6ebed}.top,.panel{background:#26191c;border-color:#493238}.logo,.role{background:#2d1e22;border-color:#493238}.role{color:#f6ebed}.role[aria-pressed=true]{background:#44212a;border-color:#ff7189}.sub,.intro,.role small,.continue span,footer{color:#c6adb2}.continue{background:#2b1d21;border-color:#493238}.notice{background:#392f1c;color:#f2d995;border-color:#66552c}.uni,.brand small{color:#ff7189}.btn{background:#d52a49}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><div class="mark">SU</div><div>SANDIP UNIVERSITY<small>ERP PORTAL</small></div></div>
+  <a href="https://www.sandipuniversity.edu.in/" target="_blank" rel="noopener noreferrer">University website ↗</a>
+</header>
+<main class="page">
+<section class="panel">
+  <div class="hero">
+    <div class="logo">
+      <!-- Upload the university-approved logo as assets/sandip-logo.png -->
+      <img src="assets/sandip-logo.png" alt="Sandip University logo" onerror="this.remove();this.parentElement.textContent='SU';">
+    </div>
+    <div class="uni">SANDIP</div><div class="sub">UNIVERSITY</div><div class="rule"></div>
+  </div>
+  <div class="heading"><div class="eyebrow">STUDENT • PARENT • STAFF</div><h1>ERP Portal</h1><p class="intro">Select your portal category to continue.</p></div>
+  <div class="content">
+    <p class="section-title">Choose your portal</p>
+    <div class="roles" role="group" aria-label="Choose portal category">
+      <button class="role" type="button" data-role="Student" aria-pressed="true"><span class="ico">🎓</span><strong>Student</strong><small>Academic and student services</small></button>
+      <button class="role" type="button" data-role="Parent" aria-pressed="false"><span class="ico">👨‍👩‍👧</span><strong>Parent</strong><small>Student progress and updates</small></button>
+      <button class="role" type="button" data-role="Staff" aria-pressed="false"><span class="ico">👩‍💼</span><strong>Staff</strong><small>Faculty and staff services</small></button>
+    </div>
+    <div class="continue"><div><strong id="selected">Student portal selected</strong><span>Continue through the university-approved ERP sign-in.</span></div>
+      <!-- Replace this URL with the exact ERP sign-in URL approved by Sandip University IT. -->
+      <a class="btn" href="https://www.sandipuniversity.edu.in/" target="_blank" rel="noopener noreferrer">Continue ↗</a>
+    </div>
+    <p class="notice"><strong>Demo interface:</strong> This is a visual front-end prototype, not the university's authenticated ERP service. Do not enter passwords or personal information here. The official ERP destination must be supplied and approved by the university IT team before launch.</p>
+  </div>
+  <footer>© <span id="year"></span> Sandip University · <a href="https://www.sandipuniversity.edu.in/" target="_blank" rel="noopener noreferrer">Official website</a></footer>
+</section>
+</main>
+<script>
+document.querySelectorAll(".role").forEach(button=>button.addEventListener("click",()=>{
+  document.querySelectorAll(".role").forEach(item=>item.setAttribute("aria-pressed",String(item===button)));
+  document.getElementById("selected").textContent=button.dataset.role+" portal selected";
+}));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
